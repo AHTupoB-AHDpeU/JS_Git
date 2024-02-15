@@ -34,6 +34,7 @@ xhrUsers.onload = function() {
                 const xhrTodos = new XMLHttpRequest();
                 xhrTodos.open('GET', `https://jsonplaceholder.typicode.com/todos?userId=${userId}`);
                 xhrTodos.send();
+                
                 xhrTodos.onload = function() {
                     if (xhrTodos.status === 200) {
                         const facts = JSON.parse(xhrTodos.responseText);
