@@ -1,11 +1,11 @@
-var curretDocument = document.getElementById('root')
+var currentDocument = document.getElementById('root')
 
 let createdDiv = document.createElement('div')
 
 createdDiv.append('text')
 console.log(" ~ createdDiv:", createdDiv)
 
-curretDocument.append(createdDiv)
+currentDocument.append(createdDiv)
 
 document.addEventListener('load', function(){
 

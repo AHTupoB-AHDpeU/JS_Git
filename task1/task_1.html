@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/logistics-delivery-1-4/64/1-64.png">
+    <title>Список пользователей</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+<table border="1">
+<thead>
+<tr>
+    <th>№</th>
+    <th>Имя пользователя</th>
+    <th>Задача</th>
+    <th>Выполнено</th>
+</tr>
+</thead>
+<tbody id="body">
+</tbody>
+</table>
+
+<button id="root">Получить список</button>
+<button onclick="$('table tbody').children().remove(); alert('Таблица очищена!')">Очистить</button>
+
+<script type="text/Javascript" src="./table_task1.js"></script>
+
+</body>
+</html>

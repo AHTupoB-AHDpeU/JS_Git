@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tech </title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/logistics-delivery-1-4/64/1-64.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="./main.js"></script>
+  <script src="./functions.js"></script>
+  <script src="./users.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+  <div id="root">
+    <div>
+      <button onclick="methodGetUsers()">Получить список</button>
+      <button onclick="$('table tbody').children().remove(); alert('Таблица очищена!')">Очистить</button>
+    </div>
+    <table cellspacing="2" border="1" cellpadding="5">
+      <thead>
+        <tr >
+          <th>№</th>
+          <th>ID</th>
+          <th>Имя</th>
+          <th>Юзернейм</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <script src="./table.js"></script>
+</body>
+
+</html>
